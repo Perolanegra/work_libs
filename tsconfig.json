@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "state-dynamic-components": [
+        "dist/state-dynamic-components"
+      ],
+      "state-dynamic-components/*": [
+        "dist/state-dynamic-components/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
