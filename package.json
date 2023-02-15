@@ -7,9 +7,12 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "packlib": "cd dist/state-dynamic-components && npm pack",
+    "ang": "ng",
+    "jest_clear": "jest --clearCache"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~8.2.14",
     "@angular/common": "~8.2.14",
@@ -22,6 +25,9 @@
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
+  },
+  "engine":{
+    "node": "14.17.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.29",
@@ -46,5 +52,8 @@
     "tsickle": "^0.37.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }

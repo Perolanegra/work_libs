@@ -1,10 +1,10 @@
-import { Injectable } from "@angular/core";
+import { Inject, Injectable } from "@angular/core";
 import { LazyImports, LazyImport } from "./state-dynamic-components.model";
 
 @Injectable()
 export class StateDynamicComponentsService implements LazyImports {
 
-  constructor(private clientAppService: HomeService) {}
+  constructor(@Inject("clientAppService") private clientAppService) {}
 
   getLazyImports(
     componentsRef: Array<{ id: string; componentRef: string }>,
